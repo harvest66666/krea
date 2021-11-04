@@ -1,0 +1,647 @@
+/* =================== CONNECTION FONTS =================== */
+@font-face {
+	font-family: "UniNeueBlack";
+	src: url("../fonts/UniNeueBlack.eot");
+	src: local("☺"), url("../fonts/UniNeueBlack.woff") format("woff"),
+		url("../fonts/UniNeueBlack.ttf") format("truetype"), url("../fonts/UniNeueBlack.svg") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "UniNeueLight";
+	src: url("../fonts/UniNeueLight.eot");
+	src: local("☺"), url("../fonts/UniNeueLight.woff") format("woff"),
+		url("../fonts/UniNeueLight.ttf") format("truetype"), url("../fonts/UniNeueLight.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "UniNeue";
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+*::after,
+*::before,
+* {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	font-size: 25px;
+	font-family: "UniNeueLight";
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1480px;
+	padding: 0 15px;
+}
+
+/* header */
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 0 0;
+	z-index: 999;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+.header__logo {
+	font-size: 47px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "UniNeueBlack";
+}
+.nav {
+}
+.nav__link {
+	font-size: 25px;
+	font-family: "Ubuntu";
+	color: #ffffff;
+	font-weight: Bold;
+	display: inline-block;
+	margin-left: 55px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+/* intro */
+.intro {
+	background: url("../img/images/KREAN_01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 440px;
+	position: relative;
+}
+
+.intro__inner {
+	line-height: 1.6;
+}
+
+.intro__title {
+	font-size: 70px;
+	font-family: Ubuntu;
+	color: #fff;
+	margin: 23px 0 0 0;
+}
+.intro__subtitle {
+	font-family: "UniNeueLight";
+	font-size: 40px;
+	color: #fff;
+}
+
+.intro__subtitle::before {
+	content: "";
+	background: url("../img/images/Shape1.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+
+	width: 50px;
+	height: 60px;
+	position: absolute;
+
+	bottom: 5%;
+	left: 50%;
+
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+/* title */
+.title {
+	font-family: "UniNeueBlack";
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	color: #787878;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title__border {
+	width: 50px;
+	height: 4px;
+	background-color: #787878;
+	margin: 22px 0;
+}
+
+/* services */
+
+.services {
+}
+.container {
+}
+
+.services__title {
+	margin: 70px 0px 100px;
+}
+.services__inner {
+}
+
+.services__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -30px;
+	flex-wrap: wrap;
+}
+
+.services__card {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	flex: 0 1 33.333%;
+	padding: 0 30px;
+}
+
+.services__sub-title {
+	font-size: 40px;
+	color: #787878;
+	display: flex;
+	margin: 70px 0;
+	font-weight: 700;
+}
+.services__comment {
+	font-size: 25px;
+	color: #787878;
+	line-height: 1.2;
+	font-weight: 300;
+}
+
+.services__btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 70px 0;
+}
+.btn {
+	width: 300px;
+	height: 63px;
+
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	-ms-border-radius: 35px;
+	-o-border-radius: 35px;
+	border-radius: 35px;
+	border: none;
+	background-image: -moz-linear-gradient(90deg, rgb(47, 61, 252) 0%, rgb(100, 17, 135) 73%);
+	background-image: -webkit-linear-gradient(90deg, rgb(47, 61, 252) 0%, rgb(100, 17, 135) 73%);
+	background-image: -ms-linear-gradient(90deg, rgb(47, 61, 252) 0%, rgb(100, 17, 135) 73%);
+	font-size: 25px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* WORKS */
+.works {
+	background-color: #ebebeb;
+	padding: 40px 0 0 0;
+}
+.works__title {
+	margin: 0 0 10px 0;
+}
+.works__inner {
+}
+.works__row {
+	display: flex;
+	justify-content: center;
+}
+.works__column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	margin: 0px;
+}
+.works__project {
+	background-color: rgb(102, 101, 101);
+	font-size: 50px;
+	font-family: Ununtu;
+	font-weight: medium;
+	padding: 100px;
+	display: block;
+	width: 100%;
+	max-width: 450px;
+	height: 450px;
+	/* max-width: 100%;
+	height: auto; */
+
+	margin: 20px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.works__project_size {
+	flex: 1 1 auto;
+	min-height: 900px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+/* References */
+
+.references {
+}
+.references__title {
+	margin: 80px 0px 73px;
+}
+.references__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.references__column {
+	position: relative;
+	z-index: 999;
+	flex: 0 1 auto;
+}
+.references__bg {
+	background-color: rgb(102, 101, 101);
+	margin: 20px;
+	color: white;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 450px;
+	height: 450px;
+}
+.references__image {
+	width: 356px;
+	height: 360px;
+	background: url("../img/images/BG\ 3.png");
+	background-repeat: no-repeat;
+
+	position: absolute;
+	/* bottom: -42px; */
+	bottom: -2%;
+	left: -3%;
+	/* left: -32px; */
+
+	z-index: -11;
+}
+
+.references__information {
+	margin: 0 0 0 50px;
+}
+.references__information h2 {
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 45px;
+	padding: 0 0 20px 0;
+	color: #303030;
+}
+.references__paragraph {
+	line-height: 1.6;
+	font-weight: 100;
+	font-size: 25px;
+	color: #5f5f5f;
+}
+
+/* logotype */
+.references__logo {
+	margin: 100px 0 0 0;
+}
+.references__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.references__item {
+	flex: 0 1 20%;
+}
+
+.references__item img {
+	/* max-width: 100%;
+	height: auto; */
+}
+
+.references__item_1 {
+	background-repeat: no-repeat;
+
+	vertical-align: top;
+}
+.references__item_2 {
+	background-repeat: no-repeat;
+
+	vertical-align: top;
+}
+.references__item_3 {
+	background-repeat: no-repeat;
+
+	vertical-align: top;
+}
+.references__item_4 {
+	background-repeat: no-repeat;
+
+	vertical-align: top;
+}
+.references__item_5 {
+	background-repeat: no-repeat;
+
+	vertical-align: top;
+}
+
+/* contack form */
+.form {
+	background-color: black;
+	padding: 50px 0 0;
+}
+
+.form__container {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.form__inner {
+}
+.form__title {
+	font-size: 30px;
+	font-family: Ubuntu;
+	font-weight: Bold;
+	color: white;
+	text-align: center;
+	margin: 70px 0;
+}
+.form-register {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.form-register__name {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #b2b2b2;
+
+	flex: 0 1 48%;
+
+	font-size: 22px;
+	color: #b2b2b2;
+	background-color: black;
+}
+.form-register__email {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #b2b2b2;
+
+	flex: 0 1 48%;
+
+	font-size: 22px;
+	color: #b2b2b2;
+	background-color: black;
+	margin-left: 40px;
+}
+.form-register__comment {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #b2b2b2;
+
+	flex: 0 1 100%;
+	font-size: 22px;
+	color: #b2b2b2;
+	background-color: black;
+	margin: 140px 0 0;
+	resize: none;
+}
+.form-register__btn {
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: #202020;
+	padding: 25px 70px;
+	border: none;
+	margin: 70px 0;
+	cursor: pointer;
+}
+
+/* ========================================== Footer ======================================== */
+.footer {
+	background: url("../img/footer/footer_bg/bg.png") 0 0 / cover;
+	overflow: hidden;
+	padding: 72px 0px;
+}
+/* ========================================== Footer CONTAINER======================================== */
+.footer__container {
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* ===========FOOTER FLEX CONTAINER===================== */
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: Ubuntu;
+	font-weight: bold;
+}
+
+/* ===========FOOTER LOGO===================== */
+.footer__logo {
+	font-family: "UniNeueBlack";
+	font-size: 47px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* ===========FOOTER ADRESS===================== */
+.footer__adress {
+	font-size: 17px;
+	color: #fff;
+	line-height: 1.4;
+}
+
+/* ==============FOOTER INFO===================== */
+
+.footer__item {
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	color: #fff;
+	margin-top: 16px;
+}
+
+.footer__image {
+	margin: 0 30px 0 0;
+	width: 30px;
+}
+
+/* =====================FOOTER SOCIAL ===================== */
+.footer__social {
+}
+.social {
+}
+.social__logo {
+}
+.social__image {
+	margin: 0 10px 0 0px;
+}
+.social__image:last-child {
+	margin: 0 0px 0 0px;
+}
+.social__text {
+	font-size: 12px;
+	color: #fff;
+	margin: 12px 0 0 0;
+	width: 110px;
+
+	float: right;
+}
